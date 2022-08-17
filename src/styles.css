@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #8ec9f9;
+  margin: auto;
+  padding: auto;
+}
+
+.meteo {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 750;
+  font-style: normal;
+  padding-bottom: 30px;
+}
+
+.city {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.current-datetime {
+  text-align: center;
+  color: #1071c0;
+}
+
+.humidity-wind {
+  text-align: center;
+  font-size: 20px;
+  color: #1071c0;
+}
+.city:hover {
+  color: #1071c0;
+}
+
+form {
+  text-align: center;
+  font-size: 20px;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.input-city {
+  width: 35%;
+}
+.search {
+  width: 100px;
+  background-color: #5298d1;
+  border: 1px solid #4c2de9;
+  color: azure;
+  font-size: 20px;
+  margin-left: 25px;
+  border-radius: 5px;
+}
+.date-wind {
+  margin-right: 50px;
+}
+.search:hover {
+  cursor: pointer;
+  background-color: #1071c0;
+}
+.container-weather {
+  display: flex;
+  justify-content: center;
+}
+.celsius-fahreneit {
+  align-items: center;
+  display: flex;
+}
+
+.card-group {
+  color: #000;
+}
+
+.card-body {
+  background-color: #abaeb4;
+  text-align: center;
+}
+
+.card-title-dayweek,
+.card-title-date {
+  font-size: 25px;
+}
+
+.card-temperature {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.card-temperature-min {
+  opacity: 0.6;
+}
+
+.temperature {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #875cdd;
+}
+
+.id-temperature {
+  font-size: 60px;
+}
+.celsius,
+.fahrenheit,
+.icon-between {
+  text-decoration: none;
+  color: #875cdd;
+  position: relative;
+  top: -33px;
+}
+
+.celsius-fahreneit .active {
+  color: #875cdd;
+  cursor: default;
+  text-decoration: underline;
+}
