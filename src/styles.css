@@ -74,7 +74,6 @@ form {
 
 .card-group {
   color: #000;
-
 }
 
 .card-body {
@@ -92,7 +91,8 @@ form {
   font-size: 18px;
 }
 
-.card-temperature-min {
+.card-temperature-min,
+.card-title-date {
   opacity: 0.6;
 }
 
