@@ -42,7 +42,6 @@ function formatMonthDaysForecast(timestamp) {
   return `${month} ${day}`;
 }
 
-
 function formateDate() {
   let nowDate = new Date();
 
@@ -122,6 +121,8 @@ function getForecast(coordinates) {
 }
 
 function showTemperature(response) {
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let cityTemperature = document.querySelector("#id-temperature");
   let cityName = document.querySelector("#current-city");
   let monthDay = document.querySelector("#month-day");
@@ -152,6 +153,7 @@ function showTemperature(response) {
 function searchCity(city) {
   let apiKey = "41c8677f21e466c9b152647e17c8d1ac";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
   axios.get(url).then(showTemperature);
 }
 
